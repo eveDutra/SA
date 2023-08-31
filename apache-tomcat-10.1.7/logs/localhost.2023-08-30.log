@@ -1,0 +1,191 @@
+30-Aug-2023 07:34:23.067 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Aug-2023 07:34:23.068 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Aug-2023 07:34:23.071 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6a638c79')
+30-Aug-2023 08:25:23.663 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Aug-2023 08:25:23.663 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Aug-2023 08:25:28.575 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Aug-2023 08:25:28.575 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Aug-2023 08:25:28.578 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@68a78f3c')
+30-Aug-2023 09:20:03.839 SEVERE [http-nio-8080-exec-83] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JavaWeb] threw exception [An exception occurred processing [/alterarCliente.jsp] at line [28]
+
+25:             
+26:             <div class="campo"> 
+27:             <label for="nomeCliente"> Nome </label><br>
+28:             <input type="text" maxlength="40" id="nomeCliente" value = "<%out.write(cli.getNomeCliente());%>" name="nomeCliente"> <br>
+29:             </div>
+30:             
+31:             <div class="campo">
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "Classes.Cliente.getNomeCliente()" because "cli" is null
+		at org.apache.jsp.alterarCliente_jsp._jspService(alterarCliente_jsp.java:155)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-Aug-2023 09:21:21.034 SEVERE [http-nio-8080-exec-83] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JavaWeb] threw exception [An exception occurred processing [alterarCliente.jsp] at line [48]
+
+45:             
+46:             <div class="campo">
+47:             <label for="chavePix"> Chave Pix </label><br>
+48:             <input type="text" maxlength="60" id="chavePix" value = "<%out.write(cli.getChavePix());%>"name="chavePix"> <br>
+49:             </div>
+50:             
+51:             <div class="campo">
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "String.length()" because "str" is null
+		at java.base/java.io.Writer.write(Writer.java:249)
+		at org.apache.jsp.alterarCliente_jsp._jspService(alterarCliente_jsp.java:183)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-Aug-2023 09:21:31.365 SEVERE [http-nio-8080-exec-85] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JavaWeb] threw exception [An exception occurred processing [alterarCliente.jsp] at line [48]
+
+45:             
+46:             <div class="campo">
+47:             <label for="chavePix"> Chave Pix </label><br>
+48:             <input type="text" maxlength="60" id="chavePix" value = "<%out.write(cli.getChavePix());%>"name="chavePix"> <br>
+49:             </div>
+50:             
+51:             <div class="campo">
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "String.length()" because "str" is null
+		at java.base/java.io.Writer.write(Writer.java:249)
+		at org.apache.jsp.alterarCliente_jsp._jspService(alterarCliente_jsp.java:183)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-Aug-2023 09:22:10.059 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Aug-2023 09:22:10.059 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Aug-2023 09:22:53.002 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Aug-2023 09:22:53.002 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Aug-2023 09:22:53.004 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@32f0fba8')
+30-Aug-2023 09:25:30.850 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JavaWeb] threw exception [An exception occurred processing [/alterarCliente.jsp] at line [48]
+
+45:             
+46:             <div class="campo">
+47:             <label for="chavePix"> Chave Pix </label><br>
+48:             <input type="text" maxlength="60" id="chavePix" value = "<%out.write(cli.getChavePix());%>"name="chavePix"> <br>
+49:             </div>
+50:             
+51:             <div class="campo">
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "String.length()" because "str" is null
+		at java.base/java.io.Writer.write(Writer.java:249)
+		at org.apache.jsp.alterarCliente_jsp._jspService(alterarCliente_jsp.java:183)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+30-Aug-2023 11:32:18.237 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Aug-2023 11:32:18.237 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Aug-2023 12:04:53.531 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Aug-2023 12:04:53.531 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Aug-2023 12:04:53.533 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3119cf6f')
+30-Aug-2023 12:05:59.393 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Aug-2023 12:05:59.394 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
