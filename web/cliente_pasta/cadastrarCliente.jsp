@@ -7,7 +7,33 @@
         <link href="../styles/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-            
+            <span class="outer">
+            <div class="title-form">
+                <h1>
+                    Clientes
+                </h1>
+            </div>
+
+            <div class="operation-selector">
+                
+                <a class="operation selected">
+                    Incluir
+                </a>
+                
+                <a href="excluirCliente.jsp" class="operation">
+                    Excluir
+                </a>
+
+                <a href="alterarCliente.jsp" class="operation">
+                    Alterar
+                </a>
+                
+                <a href="consultaCliente.jsp" class="operation">
+                    Consultar
+                </a>
+                
+            </div>
+        </span>
            <form action="incluir_cliente.jsp" method="post" class="tela"> 
             <h1>Cadastre o Cliente</h1>
             
