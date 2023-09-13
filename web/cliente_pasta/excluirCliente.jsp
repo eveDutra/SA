@@ -23,30 +23,7 @@
             <input type="text" maxlength="14" id="cpfCliente" value = "<%out.write(vCpfCliente);%>" readonly="true" name="cpfCliente">  <br>
             </div>
             
-            <div class="campo"> 
-            <label for="nomeCliente"> Nome </label><br>
-            <input type="text" maxlength="40" id="nomeCliente" readonly="true" value = "<%out.write(cli.getNomeCliente());%>" name="nomeCliente"> <br>
-            </div>
             
-            <div class="campo">
-            <label for="foneCliente"> Telefone </label><br>
-            <input type="text" maxlength="15" id="foneCliente" readonly="true" value = "<%out.write(cli.getFoneCliente());%>"name="foneCliente"> <br>
-            </div>
-            
-            <div class="campo">
-            <label for="emailCliente"> E-mail </label><br>
-            <input type="text" maxlength="50" id="emailCliente" readonly="true" value = "<%out.write(cli.getEmailCliente());%>" name="emailCliente"> <br>
-            </div>
-            
-            <div class="campo">
-            <label for="nrcartaodebcred"> Número do Cartão (Débito/Crédito) </label><br>
-            <input type="text" maxlength="12" id="nrcartaodebcred" readonly="true" value = "<%out.write(cli.getNrCartaoDebCred());%>"name="nrcartaodebcred"> <br>
-            </div>
-            
-            <div class="campo">
-            <label for="chavePix"> Chave Pix </label><br>
-            <input type="text" maxlength="60" id="chavePix" readonly="true" value = "<%out.write(cli.getChavePix());%>"name="chavePix"> <br>
-            </div>
             
             <div class="campo">
             <button type="submit">Alterar</button>

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.sql.ResultSet;
 
+
 public class Cliente {
 
     private String cpfCliente;

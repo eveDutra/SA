@@ -3,14 +3,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastro</title>
+        <title>Modelo</title>
         <link href="../styles/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
             <span class="outer">
             <div class="title-form">
                 <h1>
-                    Clientes
+                    Modelo
                 </h1>
             </div>
 
@@ -34,38 +34,24 @@
                 
             </div>
         </span>
-           <form action="incluir_cliente.jsp" method="post" class="tela"> 
-            <h1>Cadastre o Cliente</h1>
+           <form action="incluir_marca.jsp" method="post" class="tela"> 
+            <h1>Cadastre o Modelo</h1>
             
             <div class="campo"> 
-            <label for="cpfCliente"> CPF </label><br>
-            <input type="text" maxlength="14" id="cpfCliente" name="cpfCliente" required> <br>
+            <label for="codTipo"> Código do Tipo </label><br>
+            <input type="text" maxlength="50" id="codTipo" name="codTipo" required> <br>
             </div>
             
             <div class="campo"> 
-            <label for="nomeCliente"> Nome </label><br>
-            <input type="text" maxlength="40" id="nomeCliente" name="nomeCliente" required> <br>
+            <label for="codMarca"> Código da Marca </label><br>
+            <input type="text" maxlength="50" id="codMarca" name="codMarca" required> <br>
             </div>
             
             <div class="campo">
-            <label for="foneCliente"> Telefone </label><br>
-            <input type="text" maxlength="15" id="foneCliente" name="foneCliente" required> <br>
+            <label for="descMarca"> Descrição </label><br>
+            <input type="text" maxlength="100" id="descMarca" name="descMarca" required> <br>
             </div>
             
-            <div class="campo">
-            <label for="emailCliente"> E-mail </label><br>
-            <input type="text" maxlength="50" id="emailCliente" name="emailCliente" required> <br>
-            </div>
-            
-            <div class="campo">
-            <label for="nrcartaodebcred"> Número do Cartão (Débito/Crédito) </label><br>
-            <input type="text" maxlength="12" id="nrcartaodebcred" name="nrcartaodebcred" required> <br>
-            </div>
-            
-            <div class="campo">
-            <label for="chavePix"> Chave Pix </label><br>
-            <input type="text" maxlength="60" id="chavePix" name="chavePix" required> <br>
-            </div>
             
             <div class="campo">
             <button type="submit">Confirmar</button>
